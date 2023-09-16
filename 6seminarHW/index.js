@@ -2,7 +2,7 @@
 // необходимо вывести в консоль результат 2^3 степени + 3 ^ 3 степени
 
 
-function getCube(number) {
+function getCube() {
   let num = +prompt("введите число");
   let x = num ** 3;
   alert(`${num} в степени 3: ${x}`)
@@ -19,7 +19,7 @@ function getCube(number) {
 
 
 
-function getSalaryMinusTax(salary) {
+function getSalaryMinusTax() {
   let inputNumber = +prompt("введите вашу зп");
     if (isNaN(inputNumber)){
       alert ('введите корректные значения')
@@ -36,7 +36,7 @@ function getSalaryMinusTax(salary) {
 // Пользователь с клавиатуры вводит 3 числа, необходимо создать функцию, которая определяет максимальное значение среди этих чисел
 
 
-    function getMax(number1, number2, number3){
+    function getMax(){
         let inputNumber1 = +prompt("введите число");
         let inputNumber2 = +prompt("введите число");
         let inputNumber3 = +prompt("введите число");
@@ -54,14 +54,14 @@ function getSalaryMinusTax(salary) {
 // 4. Деление
 // Необходимо сделать так, чтобы функция вернула число, например выражение console.log(sum(2, 6)); должно вывести число 8 в консоль (sum - функция сложения в данном примере, ваши названия функций могут отличаться). Округлять значения, которые возвращают функции не нужно, однако, обратите внимание на разность, функция должна вычесть из большего числа меньшее, либо вернуть 0, если числа равны. Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать не нужно.
 
-function summ(number1, number2){
+function summ(){
   let inputNumber1 = +prompt("введите число");
   let inputNumber2 = +prompt("введите число");
   let sum = inputNumber1 + inputNumber2  
   alert(`Сумма чисел равна: ${sum}`)
 }
 
-function difference(number1, number2){
+function difference(){
   let inputNumber1 = +prompt("введите число");
   let inputNumber2 = +prompt("введите число");
   if (inputNumber1 > inputNumber2){
@@ -75,13 +75,13 @@ function difference(number1, number2){
   
 }
 
-function multy(number1, number2){
+function multy(){
   let inputNumber1 = +prompt("введите число");
   let inputNumber2 = +prompt("введите число");
   let multy = inputNumber1 * inputNumber2  
   alert(`Произведение чисел равно: ${multy}`)
 }
-function division(number1, number2){
+function division(){
   let inputNumber1 = +prompt("введите число");
   let inputNumber2 = +prompt("введите число");
   let division = inputNumber1 / inputNumber2  
