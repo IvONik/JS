@@ -86,7 +86,7 @@ class Order extends Product{
             for (let i = 0; i < this.products.length; i++) {            
                 let price = this.products[i].price;
                 let quantity = this.products[i].quantity;
-                result = result + (price * quantity);            
+                result = result + price * quantity;            
             }
         return result;        
         };       
