@@ -71,9 +71,9 @@ class Product{
         this.quantity = quantity;
     }
 }
-class Order extends Product{
-    constructor(name, price, quantity, id, products){
-        super(name, price, quantity)
+class Order {
+    constructor(id, product){
+        
         this.id = id;
         this.products = [];
     }
