@@ -18,23 +18,7 @@ class Manager {
     this.dishes.set("Суши", "Сеякемаки");
     this.dishes.set("Десерт", "Тирамису");
     this.dishes.set("Десерт", "Чизкейк");
-  }
-
-  // newOrder(client, ...orders) {
-  //   console.log(`Клиент ${client.firstname} ${client.lastname} заказал:`);
-
-  //   for (const order of orders) {
-  //     const dishType = this.dishes.get(order.name);
-  //     const chef = [...this.chefs.entries()].find(([name, specialization]) => specialization === dishType);
-
-  //     if (chef) {
-  //       console.log(`${dishType} "${order.name}" - ${order.quantity}; готовит повар ${chef[0]}`);
-  //     } else {
-  //       console.log(`Блюдо "${order.name}" не может быть приготовлено, так как нет подходящего повара.`);
-  //     }
-  //   }
-  // }
-
+  }  
   newOrder(client, ...orders) {
     console.log("");
     console.log(`Клиент ${client.firstname} заказал:`);
