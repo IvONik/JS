@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- 
+        // 1. Отслеживание изменения ориентации экрана:
+    // Напишите код, который отслеживает изменение ориентации экрана устройства (с портретной на ландшафтную и наоборот) и выводит сообщение об этом на веб-странице. -->
+    <h2 class="orientation"></h2>
+
+    <!-- // 2. Предупреждение о несохраненных данных:
+    // Создайте веб-форму с текстовым полем. Реализуйте функционал, при котором при попытке закрыть вкладку браузера появляется диалоговое окно с предупреждением о возможности потери введенных, но несохраненных данных. -->
+        
+
+    <input type="text" placeholder="введите ваше имя">
+    <input type="number" placeholder="введита ваш возраст">
+    <button>отправить</button>
+
+    <script>
+        const orientationEl = document.querySelector('.orientation')
+        
+        // чтобы правильно отобразить ориентацию, нужно оновить страницу:
+        // function isPortrait() {
+        //     if (window.innerHeight < window.innerWidth){
+        //         orientationEl.textContent = 'режим планшета'               
+        //     }else{
+        //         orientationEl.textContent = 'портретный режим'
+        //     }            
+        // }
+        // isPortrait()
+
+
+        window.addEventListener("orientationchange", function() {
+            const orient = window.orientation;
+            if(orient === 90 || orient === -90)
+            orientationEl.textContent = 'режим планшета'            
+            else{
+                orientationEl.textContent = 'портретный режим'
+            }
+        })
+  
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            event.returnValue = '';
+        });
+
+    </script>
+</body>
+</html>
